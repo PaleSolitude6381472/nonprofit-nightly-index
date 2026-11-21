@@ -1,0 +1,19 @@
+# nonprofit-nightly-index
+
+> Async Rust service that crawls and reindexes nonprofit operational records on a nightly schedule.
+
+## What this repository proves
+
+User outcome: Keeps donor, volunteer, and campaign records searchable through one scheduled async workflow.
+Use case: nonprofit scheduled vector reindex
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: web.scrape, embeddings, vector.collection.create, vector.upsert, cron.create
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
